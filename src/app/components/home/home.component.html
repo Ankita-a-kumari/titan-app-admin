@@ -1,0 +1,95 @@
+<!-- IMAGE MAIN -->
+
+<div class="background"></div>
+<!-- CARD -->
+<div class="container">
+  <div class="row">
+    <!-- card -->
+    <div><h2 class="launche">New Launches</h2></div>
+    <div class="col-sm-3" *ngFor="let items of user">
+      <div class="card mt-2 card-style" style="width: 18rem">
+        <img class="card-img-top img1" [src]="items.img" />
+        <div class="card-body">
+          <h5 class="card-title card-name">{{ items.title |elipses:20:'...' }}</h5>
+          <p class="card-text sale">
+            <del class="offer">{{ items.price }}</del>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ items.sale }}
+            <i style="cursor: pointer;" (click)="addToCartItems(items)" class="fa fa-shopping-cart"></i>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ng-template #myModal1 let-modal>
+  <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">INFORMATION</h4>
+  
+  <button type="button" class="close"  aria-label="Close" (click)="modal.dismiss('cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+Please sign in to continue.
+  </div>
+  <div class="modal-footer">
+      <button type="button" class="btn btn-primary" (click)="naviatetoLogin()">Continue</button>
+      
+  </div>
+</ng-template>
+<!-- CONTACT DETAILS -->
+<!-- <hr> -->
+<!-- <div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="d-flex justify-content-center">
+        <header class="contact"><h1>Contact-Us</h1></header>
+      </div>
+      <div class="d-flex justify-content-center pdata">
+        3rd Floor, IFCI Tower 61, Nehru Place, New Delhi, 110019
+      </div>
+    </div>
+  </div>
+  <div class="mb-4">
+    <div class="row">
+      <div class="col-sm-6 business1">
+        <div class="contact1"><h4>CUSTOMER QUERIES</h4></div>
+        <div>
+          <p>
+            <span>E-mail: </span
+            ><a href="mailto: customercare@titan.co.in" class="text-link"
+              >customercare@titan.co.in</a
+            >
+            <br />
+            <span>Phone:</span>
+            <a href="tel: 1800-266-0123" class="text-link">1800-266-0123</a>
+            <br />
+            <span
+              >Need Help :
+              <a
+                href="https://www.titancompany.in/contact-us"
+                target="_blank"
+                class="text-link"
+                >Click here</a
+              ></span
+            >
+            <br />
+            <span>Timings: 10:00 A.M. - 07:00 P.M. </span>
+          </p>
+        </div>
+      </div>
+      <div class="col-sm-6 business">
+        <div class="contact2"><h4>FOR BUSINESS QUERIES</h4></div>
+        <p>
+          <a href="mailto: corpcomm@titan.co.in" class="text-link"
+            >feedback@timexindia.com</a
+          >
+          <br />
+          <a href="tel: +91 1204741300" class="text-link">(+91) 1204741300</a>
+          <br />
+          <span>Timings: 10:00 A.M. - 07:00 P.M. </span>
+        </p>
+      </div>
+    </div>
+  </div>
+</div> -->

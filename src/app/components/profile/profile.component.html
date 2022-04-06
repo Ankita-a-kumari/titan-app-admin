@@ -1,0 +1,32 @@
+<div class="container" >
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="d-flex justify-content-center">
+        <header class="account"><h4>My Account</h4></header>
+      </div>
+    </div>
+    <div class="col-sm-12">
+      <div class="d-flex justify-content-center">
+        <header class="logout">
+          <a class="logout" (click)="logout()">Log out</a>
+        </header>
+      </div>
+    </div>
+    <div class="col-sm-8">
+      <div>
+        <h2 class="order">ORDER HISTORY</h2>
+      </div>
+      <div>
+        <h2 class="details">You haven't placed any order yet</h2>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="order">ACCOUNT DETAILS</div>
+      <div>
+        <h5 class="accname me-5">{{ fname }} {{ lname }}</h5>
+        <a class="edit" routerLink="/edit">Edit Info</a>
+      </div>
+      <div></div>
+    </div>
+  </div>
+</div>

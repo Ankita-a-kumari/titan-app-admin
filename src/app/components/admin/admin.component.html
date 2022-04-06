@@ -1,0 +1,18 @@
+<div>
+    <h3 style="margin-bottom: 20px;">List of Users</h3>
+    <table class="table table-striped" *ngIf="data">
+        <thead class="thead-dark">
+            <th>User Name</th>
+            <th>Email Verified</th>
+            <th>Phone Number</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{data.user.email}}</td>
+                <td>{{data.user.emailVerified}}</td>
+                <td>{{data.user.phoneNumber}}</td>
+            </tr>
+        </tbody>
+      
+    </table>
+</div>

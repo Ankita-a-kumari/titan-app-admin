@@ -1,0 +1,230 @@
+/* IMAGE */
+.background {
+  /* The image used */
+  background-image: url("https://www.titan.co.in/wps/wcm/connect/titan/708854c3-3d8c-4b98-a284-6d3730f4cbd0/desktop/2500x1000.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80OO8010QKMQAAEP2004-708854c3-3d8c-4b98-a284-6d3730f4cbd0-desktop-nX0qB-I&impolicy=pqlow");
+  height: 538px;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* Needed to position the navbar */
+  position: relative;
+}
+/* CONTACT DETAILS */
+.pdata {
+  margin-bottom: 30px;
+}
+.contact {
+  font-family: "Avenir Next", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: -0.025em;
+  line-height: 1;
+  word-break: break-word;
+  text-transform: uppercase;
+  margin: 25px 0;
+  font-size: 24px;
+}
+
+.contact1 {
+  display: flex;
+  margin-bottom: 1em;
+  font-family: "Avenir Next", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  letter-spacing: -0.025em;
+  line-height: 1;
+  word-break: break-word;
+  text-transform: uppercase;
+}
+.contact2 {
+  display: flex;
+  font-family: "Avenir Next", sans-serif;
+  font-weight: 700;
+  margin-bottom: 1em;
+  font-style: normal;
+  font-size: 16px;
+  letter-spacing: -0.025em;
+  line-height: 1;
+  word-break: break-word;
+  text-transform: uppercase;
+  text-align: left;
+}
+.h2 {
+  font-family: "Avenir Next LT Pro", sans-serif;
+  margin: 10px 0;
+}
+.ul {
+  font-family: "Avenir Next LT Pro", sans-serif;
+}
+
+.business1 {
+  padding-left: 5%;
+}
+.business {
+  padding-left: 20%;
+}
+.rta a {
+  color: #333029;
+}
+.text-link {
+  color: #333029;
+  word-break: break-word;
+  display: inline-block;
+  text-decoration: none;
+  letter-spacing: -0.025em;
+  padding-bottom: 2px;
+  border-bottom: 2px solid currentColor;
+}
+
+/* CARD */
+.card-name {
+  font-size: 17.96px;
+  color: #000;
+  font-weight: 800;
+  text-align: center;
+}
+.card-style {
+  border: none;
+  display: flex;
+}
+.offer {
+  color: #868686;
+  font-weight: 600;
+  font-style: bold;
+}
+.card-body {
+  text-align: center;
+}
+.sale {
+  color: #333029;
+  font-style: bold;
+  font-size: 16px;
+}
+.items {
+  display: flex;
+}
+.launche {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 24px;
+  font-family: "Avenir Next", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: -0.025em;
+  line-height: 1;
+  word-break: break-word;
+  text-transform: uppercase;
+}
+
+/* @media (max-width: 412px) {
+  .background {
+    height: 190px;
+  }
+} */
+
+@media (max-width: 414px) {
+  .background {
+    height: 190px;
+  }
+  .card-img,
+  .card-img-bottom,
+  .card-img-top {
+    width: 135px;
+    height: 126px;
+    margin-left: 60px;
+  }
+}
+
+@media (width: 820px) {
+  .background {
+    height: 377px;
+    width: 890px;
+  }
+  .col-sm-3 {
+    width: 350px;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+}
+
+@media (width: 768px) {
+  .background {
+    height: 365px;
+    width: 875px;
+  }
+  .col-sm-3 {
+    width: 350px;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+}
+
+@media (width: 912px) {
+  .background {
+    height: 365px;
+    width: 912px;
+  }
+  .col-sm-3 {
+    width: 350px;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+}
+
+@media (width: 540px) {
+  .background {
+    height: 225px;
+    width: 100%;
+  }
+  .card-img,
+  .card-img-bottom,
+  .card-img-top {
+    width: 160px;
+    height: 120px;
+    margin-left: 45px;
+    margin-bottom: 10px;
+  }
+  .col-sm-3 {
+    width: 200px;
+  }
+  .card-body {
+    width: 225px;
+  }
+}
+
+@media (width: 280px) {
+  .background {
+    height: 150px;
+    width: 300px;
+  }
+  .card-img,
+  .card-img-bottom,
+  .card-img-top {
+    margin-bottom: 16px;
+    margin-top: 30px;
+  }
+}
+
+
+@media (width: 1024px) {
+  .background {
+    height: 435px;
+    width: 1051px;
+  }
+  .card-img,
+  .card-img-bottom,
+  .card-img-top {
+    width: 210px;
+    height: 200px;
+  }
+  .col-sm-3 {
+    width: 300px;
+    margin-left: 20px;
+    margin-top: 32px;
+  }
+  .launche {
+    margin-top: 40px;
+  }
+}

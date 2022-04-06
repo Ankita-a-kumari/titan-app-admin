@@ -1,0 +1,140 @@
+.navbar-nav {
+  flex-direction: row;
+  justify-content: start;
+}
+
+.background {
+  box-shadow: 0 0 8px #ddd;
+  background: #e2e2e2;
+}
+
+.col-sm-6 .first {
+  margin-right: 50px;
+  /* margin-left: -140px; */
+}
+
+.col-sm-6 .second {
+  margin-right: 50px;
+}
+
+.col-sm-6 .third {
+  margin-right: 50px;
+}
+
+ul li a {
+  color: black;
+  font-size: 16px;
+  font-weight: 700px;
+  font-family: "Avenir Next LT Pro";
+}
+
+ul li a:hover {
+  color: #fff;
+  text-decoration: none blue;
+}
+
+.icons i {
+  color: black;
+  font-size: 25px;
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 991px) {
+  .site-header [class^="col-"] {
+    margin-top: 0px;
+  }
+}
+@media (max-width: 767px) {
+  .site-header {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-nav {
+    flex-direction: column;
+    font-size: 2px;
+    padding-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 412px) {
+  .nav1 {
+    flex-direction: column;
+    font-size: 2px;
+    padding-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 414px) {
+  .nav1 {
+    flex-direction: column;
+    font-size: 2px;
+    padding-left: 35px;
+    margin-right: 0px;
+  }
+}
+
+@media (width: 820px) {
+  .nav1 {
+    flex-direction: row;
+    font-size: 2px;
+    padding-left: 0px;
+    margin-right: 0px;
+  }
+  .site-header {
+    width: 890px;
+  }
+}
+
+@media (width: 768px) {
+  .site-header {
+    width: 875px;
+  }
+  .nav1 {
+    flex-direction: row;
+    font-size: 2px;
+    padding-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+@media (width: 912px) {
+  .site-header {
+    width: 910px;
+  }
+  .nav1 {
+    flex-direction: row;
+    font-size: 2px;
+    padding-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+@media (width: 540px) {
+  .site-header {
+    width: 540px;
+  }
+}
+
+@media (width: 280px) {
+  .nav1 {
+    flex-direction: column;
+    font-size: 2px;
+    padding-left: 0px;
+    margin-right: 0px;
+  }
+  .site-header {
+    width: 300px;
+  }
+}
+
+@media (width: 1024px) {
+  .site-header {
+    width: 1050px;
+  }
+}

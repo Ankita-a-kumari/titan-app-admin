@@ -1,0 +1,20 @@
+@import "./assets/css/reset.css";
+@import "./assets/css/owl.carousel.css";
+@import "./assets/css/owl.carousel.min.css";
+@import "./assets/css/owl.theme.default.css";
+@import "./assets/css/owl.theme.default.min.css";
+
+@font-face {
+  font-family: "Avenir Next LT Pro";
+  src: url("./assets/fonts/AvenirNextLTPro-Regular.eot");
+  src: url("./assets/fonts/AvenirNextLTPro-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/AvenirNextLTPro-Regular.woff2") format("woff2"),
+    url("./assets/fonts/AvenirNextLTPro-Regular.woff") format("woff"),
+    url("./assets/fonts/AvenirNextLTPro-Regular.ttf") format("truetype"),
+    url("./assets/fonts/AvenirNextLTPro-Regular.svg#AvenirNextLTPro-Regular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

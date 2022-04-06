@@ -1,0 +1,71 @@
+.grid {
+  /* max-width: 30%; */
+  margin: 0 auto;
+  /* background-color: #a29e9e; */
+
+  border-radius: 25px;
+  padding: 30px;
+}
+.section-header {
+  text-align: center;
+  font-size: 24px !important;
+  font-family: "Avenir Next", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: -0.025em;
+  line-height: 1;
+  word-break: break-word;
+  text-transform: uppercase;
+}
+.section-header__title {
+  align-items: center;
+  margin-bottom: 0;
+}
+.form-vertical {
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+.input {
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeSpeed;
+  font-family: "Avenir Next", sans-serif;
+  font-size: 15.3px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.025em;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+}
+.input-full {
+  background-color: transparent;
+  color: inherit;
+  border: 0;
+  border-bottom: 2px solid #333029;
+  max-width: 100%;
+  padding: 8px 0;
+  border-radius: 0;
+  margin-bottom: 30px;
+}
+
+.btn--full {
+  width: 100%;
+  margin-top: 20px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 14px 22px;
+  text-decoration: none;
+  text-align: center;
+  border: 2px solid transparent;
+  border-radius: 35px;
+  color: #fff;
+  background: black;
+  transition: background 0.15s ease;
+}
+#customer_register_link {
+  text-align: center;
+  color: #333029;
+}

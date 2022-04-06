@@ -1,0 +1,111 @@
+<div class="grid mt-3">
+  <div class="grid__item medium-up--one-third medium-up--push-one-third">
+    <header class="section-header">
+      <h1 class="section-header__title">Update Details</h1>
+    </header>
+    <div class="card">
+     <div class="card-body">
+    <div class="form-vertical">
+      <form
+        #update="ngForm"
+        (ngSubmit)="updateData(update)"
+        method="post"
+        action="/account"
+        id="create_customer"
+        accept-charset="UTF-8"
+        *ngIf="!loading"
+      >
+        <iframe
+          id="one-click-social-login-buttons-1"
+          class="one-click-social-login-buttons"
+          frameborder="0"
+          style="margin-top: 10px; width: 100%; overflow: hidden; height: 60px"
+          data-default_style="margin-top: 10px; overflow: hidden; width: 100%;"
+          allowtransparency="yes"
+          src="https://oneclicksociallogin.devcloudsoftware.com/api/socialbuttons/?cache_key=2946283855&amp;shop=boult-audio1.myshopify.com&amp;popup_type=&amp;current_url=https%3A%2F%2Fwww.boultaudio.com%2Faccount%2Fregister&amp;iframe_id=1"
+        >
+        </iframe>
+        <input type="hidden" name="form_type" value="create_customer" /><input
+          type="hidden"
+          name="utf8"
+          value="✓"
+        />
+
+        <label for="FirstName">First Name</label>
+        <div class="mt-2"></div>
+        <input
+          type="text"
+          name="FirstName"
+          class="input-full form-control"
+          autocapitalize="words"
+          autofocus
+          [(ngModel)]="fname"
+        />
+
+        <label for="LastName">Last Name</label>
+        <div class="mt-2"></div>
+        <input
+          type="text"
+          name="LastName"
+          class="input-full form-control"
+          autocapitalize="words"
+          [(ngModel)]="lname"
+        />
+
+        <label for="register_phone_number" class="form-field-title"
+          >Mobile Number</label
+        >
+        <div class="mt-2"></div>
+        <input
+          required
+          type="tel"
+          pattern="^\d{10}$"
+          class="form-field-input form-field-text input-full form-control"
+          name="register_phone_number"
+          value=""
+          [(ngModel)]="phonenumber"
+        />
+
+        <label for="Email">Email</label>
+        <div class="mt-2"></div>
+        <input
+          type="email"
+          name="Email"
+          class="input-full form-control"
+          autocapitalize="off"
+          [(ngModel)]="email"
+        />
+        <label for="CreatePassword">Password</label>
+        <div class="mt-2"></div>
+        <input
+          type="password"
+          name="CreatePassword"
+          class="input-full form-control"
+          required
+          [(ngModel)]="password"
+        />
+
+        <p>
+          <!-- <input type="submit" value="Create" class="btn btn--full" /> -->
+          <button
+            type="submit"
+            value="Create"
+            class="btn btn--full"
+            name="register"
+          >
+            Update
+          </button>
+        </p>
+      </form>
+    </div>
+  </div>
+  </div>
+  </div>
+</div>
+
+<div class="d-flex justify-content-center m-4" *ngIf="loading">
+  <h1 class="sign">{{ update }}</h1>
+  <div class="spinner-border" role="status">
+    <span class="sr-only sign" id="loading">{{ update }}</span>
+  </div>
+</div>

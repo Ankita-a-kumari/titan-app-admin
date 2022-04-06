@@ -1,0 +1,22 @@
+<ng-container *ngIf="getItems.length>0">
+    <div class="card" style="width: 25rem;">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item" *ngFor="let item of getItems;let indexofElement=index">
+                <img style="width:25%" class="card-img-top img1" [src]="item.img" />
+            <div class="card-body">
+               
+                <h5 class="card-title card-name">{{ item.title }}</h5>
+                <p class="card-text sale">
+                  <del class="offer">{{ item.price }}</del>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ item.sale }}
+                  <i style="cursor: pointer;" (click)="removeItems(indexofElement)" class="fa fa-trash"></i>
+                </p>
+              </div>
+          </li>          
+        </ul>
+      </div>
+
+</ng-container>
+
+<ng-container *ngIf="getItems.length==0">
+  <h4>Your cart is Empty</h4>
+    </ng-container>
