@@ -43,6 +43,7 @@ this.loginCred.password=this.password
             this.commonService.isAdmin=true;
             this.commonService.usersData=response;
         }
+        else this.commonService.isAdmin=false;
         this.loading = false;
         this.router.navigate(['/home'])   
     }
